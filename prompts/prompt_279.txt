@@ -1,0 +1,14 @@
+Question: Answer the following yes/no question.
+Is this a positive movie review?
+Review: one of the last entries in the long - running carry on series , carry on behind is very similar to carry on camping in that it involves a group of holidaymakers descending on a ' caravan ' site .professors anna vrooshka ( elke sommer ) and roland crump ( kenneth williams ) and a group of archaeology
+A: yes
+###
+Question: Answer the following yes/no question.
+Is this a positive movie review?
+Review: if snake eyes were a dog , you 'd put it to sleep .if it was a couch , you 'd put it out on the sidewalk , where it would sit for a week .if it were your child , you 'd be reading military school catalogs .if it were a ship -- no , it would n't be the titanic , that would imply glamor and tragedy --
+A: no
+###
+Question: Answer the following yes/no question.
+Is this a positive movie review?
+Review: yet another brainless teen flick ,this one is about , surprise , drugs and sex .stars katie holmes and sarahpolly could n't look more bored .their characters are cardboard cut - outs of every cliched teenager out there .one thing you need to knowis i really hated this movie .everything about it annoyed the hell out of me .the acting , and script , the plot , and ending .the director ( of the fluke hit swingers ) could have very well directed a bunch of no - name actors and had a watchabe film .the " big " stars of go pretty much drown the project of any originality .i felt like i was watching dawson 's creek episode 200 .although the film still would have stayed at red despite its cast .the " surprise " ending was sooo predictable .since when is a male character 's sudden outing of the closet considered a surprise in hollywood anymore ? ?go is dawson 's creek + varsity blues - she 's all that= go home and watch something else .
+A:

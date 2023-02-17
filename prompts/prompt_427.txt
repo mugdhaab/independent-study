@@ -1,0 +1,14 @@
+Question: Answer the following yes/no question.
+Is this a positive movie review?
+Review: in one of my many videos i have attained from the local library , casablanca was my third classic in some weeks .the others being citizen kane and vertigo ( yes , i am trying to see as many of afi 's greatest movies ever made as i can ) .but , casablanca stood out from the rest for me : it was actua
+A: yes
+###
+Question: Answer the following yes/no question.
+Is this a positive movie review?
+Review: in " the astronaut 's wife , " charlize theron plays a young woman with a nervous demeanor , pixie - hairdo and demon spawn unwittingly growing in her belly .if only her name was n't jillian , the makers of this embarrassing bit of sci - fi shlock could have come up with a far more appropriate title
+A: no
+###
+Question: Answer the following yes/no question.
+Is this a positive movie review?
+Review: barb wire , pamela anderson lee 's first foray into films , highlights the fact that her only talent lies in her silicone enhanced assets .being the only notable member of the cast , the camera lingers lustily o n her body at every opportunity , making her character 's catch line , " do n't call me babe , " sound very ironic indeed .from the very opening of the movie , we are treated to a striptease routine from anderson , ending in her hurling her stiletto smack between the eyes of a lusty male who happened to call her babe .throughout the movie , there is ample footage of enormous breasts and cleavage , if not of anderson 's , then at least of the female extras .this alone is enough to retitle the movie babe wire . for a plot, barb wire rehashes the casablanca storyline .it is 2017 , the middle of the second american civil war , and barb wire , a former resistance fighter , runs a joint in steel harbour called hammerhead ( ! ! ) .known for attracting resistance fighters an d characters of all sorts, the bar attracts the attention of the government forces who appear dressed in nazi - style uniforms .in between bashing up helpless males and showing off her trademark breasts , barb wire has to help a former lover and his wife get to the airport on the other side of the town , past the government - controlled areas , and to freedom .even the airport looks like the one in casablanca , except that the plane in the background is a modern , private jet .there are hardly any significant moments in this film , and one gets the impression that it was designed for young teenagers familiar with the dark horse comics version of " barb wire ."if anything , one leaves the film with the confirmation that anderson di d not do her own stunts . who could fight and jump in a skimpy , strapless leather top , and yet keep her breasts from spilling out ?only a stuntwoman . not pamela anderson lee .
+A:

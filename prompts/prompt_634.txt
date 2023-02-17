@@ -1,0 +1,14 @@
+Question: Answer the following yes/no question.
+Is this a positive movie review?
+Review: wolfgang petersen 's latest , the perfect storm , is like a pineapple .it only tastes good after arduous peeling and digging - if you try to eat the fruit , spikes and all , it 's going to hurt ? quite a bit .ok , maybe that was a confusing analogy , sohere 's my main complaint about the latest man 
+A: no
+###
+Question: Answer the following yes/no question.
+Is this a positive movie review?
+Review: john cusack is the kind of actor who seems to effortlessly slide into his respective film roles .so effortlessly that people tend to forget he 's there , much in the way people rarely recall many of the great character actors ( anyone who can put the name james rebhorn with that actor 's face is inv
+A: yes
+###
+Question: Answer the following yes/no question.
+Is this a positive movie review?
+Review: man , this was one wierd movie .similar to conspiracy theory in that it could n't decide which genre it is .the first hour isyour standard stock aliens clone , which nicely created an eerie atmosphere about the ship .the last half hour ?this was when the makers blew the script out the airlock and just decided - " screw it , let 's just kill everybody " .from then on - forget sci - fi ... this movie becomes 100 % horror .what really dissappointed me about this movie was that it tried to scare you in entirely the wrong way .instead of using clever tricks or trying to build up to a scare- this movie just uses loud noises , sudden camera shifts and short quick bursts of gore ... .. yawn ... .everyone 's seen it all before and knows when to expect it .the one thing that was done well was the lead up to finding out about what happened to the previous crew .there are skeletons lying around mangled and mashed , but what did this ?then finally after being painfully restored - the new crew views the video .the acting is n't too bad at all ..... considering what the actors had to work with anyway , as there is no complex or interesting dialogue to speak of .there was some very nice camerawork in certain sequences though , like when the hull near the bridge of the event horizon is breached and the camera pans back to follow specific objects as they bounce across the deck and are sucked out into space .this movie could have been so much better .it had a good experienced cast who deserved more to work with .there was just nothing new here that any of us have n't seen before in aliens or hellraiser .
+A:

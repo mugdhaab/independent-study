@@ -1,0 +1,14 @@
+Question: Answer the following yes/no question.
+Is this a positive movie review?
+Review: " there will be another , " the ads for this sequel proclaimed , and why not ? true , brandon lee is dead , but there would be no reason for him to appear in a followup to 1994 's the crow , anyway .the idea of spinning artist james o'barr 's original comic book series into a sequel franchise revolv
+A: no
+###
+Question: Answer the following yes/no question.
+Is this a positive movie review?
+Review: the long kiss goodnight ( r ) meryl streep tried it and failed .even pamela anderson lee made an attempt but fell flat on her well - bared assets .however , geena davis could very well become the first bankable american female action starwith the long kiss goodnight ,a preposterous but incredibly fu
+A: yes
+###
+Question: Answer the following yes/no question.
+Is this a positive movie review?
+Review: susan granger 's review of " the musketeer " ( universal pictures ) hollywood launches another assault on classic literature with this $ 50 million adaptation of alexandre dumas 's novelthat 's strong on actionbut weak on drama , fusing hong kong martial arts with 17th century swordplay .the story chronicles the adventures of the dashing d'artagnan ( justin chambers ) as he leaves his village of gascogne , headed for paris , to join king louis xiii 's elite guard , the royal musketeers , and to search for the man who killed his parents 14 years earlier .this puts him in conflict with the formidable febre ( tim roth ) , vicious henchman for conniving cardinal richelieu ( stephen rea ) .the traditional musketeer trio - aramis ( nick moran ) , athos ( jan gregor kremp ) and porthos ( steve speirs ) - do n't offer much helpso he turns to the feisty francesca ( mena suvari ) , chambermaid to the queen of france ( catherine deneuve ) .scripter gene quintano and director - cinematographer peter hyams are primarily interested in the derring - do , as evidenced by choreographer xin - xin xiong 's elaborate - but not original - stunts , including a fast - paced stagecoach chase , a tavern brawl on rolling barrels , high - wire acrobatics with the combatants dangling from ropes , and a ladder - fight sequence . filmed in southern france , the scenery , sets and costumes are spectacular , but the lighting is too dark and editing is filled with choppy , restless mtv'ish cuts .as the swashbuckling d'artagnan , bland calvin klein model justin chambers buckles where he should be swashing , totally lacking on - screen charisma , not to mention acting skill .mena suvari , so impressive in " american beauty , " seems like a contemporary interloper in the royal court .on the granger movie gauge of 1 to 10 , " the musketeer " is a cinematic but shallow 3 ." all for one and one for all " ?not this time ' round .
+A:
