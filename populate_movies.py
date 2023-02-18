@@ -92,7 +92,7 @@ def create_prompts():
             for i in range(2):
                 # import the whole file text
                 reviewText = []
-                with open("/Users/mugdha/Documents/Independent Study/movies/docs/" + review[i], 'r') as file:
+                with open("/Users/mugdha/Documents/Independent Study/movies/independent-study/docs/" + review[i], 'r') as file:
                     reviewText = file.read().replace('\n', '')
 
                 line1 = "Question: Answer the following yes/no question."
@@ -116,7 +116,7 @@ def create_prompts():
             # print(len(valReviews))
             # print(valReviews[valCount])
             # print(valReviews[valCount]['annotation_id'])
-            with open("/Users/mugdha/Documents/Independent Study/movies/docs/" + valReviews[valCount]['annotation_id'], 'r') as file:
+            with open("/Users/mugdha/Documents/Independent Study/movies/independent-study/docs/" + valReviews[valCount]['annotation_id'], 'r') as file:
                 valReviewText = file.read().replace('\n', '')
             lines.append("Review: " + valReviewText)
             lines.append("A:")
@@ -124,7 +124,7 @@ def create_prompts():
                 valDict["prompt_" + str(fileCount)] = "no"
             else:
                 valDict["prompt_" + str(fileCount)] = "yes"
-            promptPath = "/Users/mugdha/Documents/Independent Study/movies/prompts/prompt_" + str(fileCount) + ".txt"
+            promptPath = "/Users/mugdha/Documents/Independent Study/movies/independent-study/prompts/prompt_" + str(fileCount) + ".txt"
             with open(promptPath, mode='wt', encoding='utf-8') as myFile:
                 myFile.write('\n'.join(lines))
             with open("validationPrompts.json", "w") as outfile:
