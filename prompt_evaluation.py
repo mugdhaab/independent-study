@@ -2,7 +2,7 @@ from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 import json
 import os
 
-directory_path = '/Users/mugdha/Documents/Independent Study/movies/independent-study/prompts/'
+directory_path = '/uufs/chpc.utah.edu/common/home/u1409693/independent-study/prompts_important/'
 directory_files = sorted(os.listdir(directory_path))
 
 
@@ -28,7 +28,7 @@ def run_model(prompts):
 def output_formatting(output_answers):
     output_answers_trunc = [ans[3:6].strip().lower() for ans in output_answers]
     jsonString = json.dumps(output_answers_trunc)
-    with open("/Users/mugdha/Documents/Independent Study/movies/independent-study/output_answers.json", "w") as outfile:
+    with open("/uufs/chpc.utah.edu/common/home/u1409693/independent-study/output_answers_important.json", "w") as outfile:
         outfile.write(jsonString)
 
 
