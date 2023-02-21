@@ -13,7 +13,7 @@ def zero_shot_prompts():
     valDict = {}
     for valCount in range(len(valReviews)):
         lines = []
-        line1 = "Question: Answer the following yes/no question."
+        line1 = "Question: Answer the following yes/no question and give the important phrases."
         line2 = "Is this a positive movie review?"
         lines.append(line1)
         lines.append(line2)
@@ -22,10 +22,17 @@ def zero_shot_prompts():
             valReviewText = file.read().replace('\n', '')
         lines.append("Review: " + valReviewText)
 
-        line3 = "A:"
+        line3 = "Important Phrases:"
         lines.append(line3)
 
-        promptPath = "/Users/mugdha/Documents/Independent Study/movies/independent-study/prompts_zero_shot/prompt_" + str(
+        importances = []
+        for evidences in valReviews[valCount]['evidences']:
+            importances.append(evidences[0]['text'])
+
+        valDict["prompt_" + str(valCount) + "_imp_phrases"] = importances
+
+
+        promptPath = "/Users/mugdha/Documents/Independent Study/movies/independent-study/prompts_zero_shot_important/prompt_" + str(
             valCount) + ".txt"
         with open(promptPath, mode='wt', encoding='utf-8') as myFile:
             myFile.write('\n'.join(lines))
