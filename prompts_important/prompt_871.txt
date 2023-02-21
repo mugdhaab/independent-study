@@ -1,16 +1,16 @@
-Question: Answer the following yes/no question.
+Question: Answer the following yes/no question and give the important phrases.
 Is this a positive movie review?
 Review: there are times when the success of a particular film depends entirely on one actor 's effort . often a single performance can turn what might have been a rather mediocre movie into something worthwhile . when one of these comes along , i usually try to think about how many other people put work into the movie , that there is no way one person could possible carry the entire project on his shoulders . but sometimes there is simply no other explanation , and such is the case with " the hurricane . "this biopic about falsely convicted boxer rubin " hurricane " carter would normally be called " norman jewison 's ' the hurricane , ' " as per the tradition of referring to a film " belonging " to a director . but though he does decent work , jewison can not claim ownership of " the hurricane , " because there is one reason this film works at all , and his name is denzel washington . washington plays carter , a boxer who in 1967 was convicted of a late - night shooting in a bar . jail
 Important Phrases: ['by sheer force of will , and he does so brilliantly', 'is a performance of weight and emotional depth', 'his work is masterful', 'doing a reasonably good job of pacing and shot selection', 'the narrative galloping along nicely', 'handles his multiple flashbacks well', 'get inside the action very well , and they are believable', 'assisted by some wonderful acting', 'best achievement', 'who deserves credit', 'the cast is game , the director does his job , and the subject matter is interesting', 'makes this film look good', 'sounds pretty good to me']
 A: yes
 ###
-Question: Answer the following yes/no question.
+Question: Answer the following yes/no question and give the important phrases.
 Is this a positive movie review?
 Review: a couple of criminals ( mario van peebles and loretta devine ) move into a rich family 's house in hopes of conning them out of their jewels . however , someone else steals the jewels before they are able to get to them . writer mario van peebles delivers a clever script with several unexpected plot twists , but director mario van peebles undermines his own high points with haphazard camera work , editing and pacing . it felt as though the film should have been wrapping up at the hour mark , but alasthere was still 35 more minutes to go . daniel baldwin( i ca n't believe i 'm about to type this ) gives the best performance in the film , outshining the other talented members of the cast . [ r ]. 
 Important Phrases: ['undermines his own high points with haphazard camera work , editing and pacing', 'alas']
 A: no
 ###
-Question: Answer the following yes/no question.
+Question: Answer the following yes/no question and give the important phrases.
 Is this a positive movie review?
 Review: ` strange days ' chronicles the last two days of 1999 in los angeles .as the locals gear up for the new millenium , lenny nero ( ralph fiennes ) goes about his business of peddling erotic memory clips .he pines for his ex - girlfriend , faith ( juliette lewis ) , not noticing that another friend , mace ( angela bassett ) really cares for him .this film features good performances , impressive film - making technique and breath - taking crowd scenes .director kathryn bigelow knows her stuff and does not hesitate to use it .but as a whole , this is an unsatisfying movie .the problem is that the writers , james cameron and jay cocks , were too ambitious , aiming for a film with social relevance , thrills , and drama .not that ambitious film - making should be discouraged ; just that when it fails to achieve its goals , it fails badly and obviously .the film just ends up preachy , unexciting and uninvolving .
 Important Phrases:

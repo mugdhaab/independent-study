@@ -1,16 +1,16 @@
-Question: Answer the following yes/no question.
+Question: Answer the following yes/no question and give the important phrases.
 Is this a positive movie review?
 Review: it 's not a bad thing to update old stories . it 's done all the time in the oral tradition . the difficulty with this film is not that the tale has changed , it 's that it 's dry . the new cinderella , danielle ( drew barrymore ) is not sitting around waiting for her prince to come . she 's a woman of the late twentieth century albeit situated in sixteenth century france . when her father dies , she stays on in his house even though she is mistreated by her wicked stepmother rodmilla ( anjelica huston ) . she works by day , but reads sir thomas more by firelight at night . although the story is updated , you know the plot . danielle meets prince henry ( dougray scott ) , goes to a ball disguised , is later found out and they live happily ever after . the movie is often like watching a filmed play . theater in real life is engrossing . theater on the screen is usually lifeless . there does n't seem to be much going on . the camera can be a star of films . here it 's aco - consp
 Important Phrases: ['the movie is often like watching a filmed play', 'usually lifeless']
 A: no
 ###
-Question: Answer the following yes/no question.
+Question: Answer the following yes/no question and give the important phrases.
 Is this a positive movie review?
 Review: on seeing the outrageous previews for bulworth one wonders what plot could possibly allow beatty get away with making those statements ( in case you missed it , warren beatty plays a politician on the campaign trail . he says to a black congregation " .  .  . if you ca n't cut down on malt liquor and chicken wings and get behind someone other than a running back who stabs his wife , you 're never gon na get rid of me .  " )well , there is such a plot , andit works very well in this comedy . beatty plays jay billington bulworth , a long - time democratic senator from california . the movie opens on a painfully repetitious montage of bulworth 's latest commercials condemning affirmative action . the montage is ironically intercut with pictures of martin luther king and bulworth in his youth working with jack kennedy . when we finally lay eyes on bulworth he is morosely weeping in front of his tv , having gone without food or sleep for days . his campaign is entering the final wee
 Important Phrases: ['it works very well in this comedy', 'deserves most of credit for bringing it to the screen', 'most of the movie is original and very enjoyable', 'he came up first with a good structure , then with good dialogue to back it up', 'was able to convincingly portray', "was able to keep the movie free from hollywood 's indulgent formulas", "it 's too bad that there are n't more movies like this around"]
 A: yes
 ###
-Question: Answer the following yes/no question.
+Question: Answer the following yes/no question and give the important phrases.
 Is this a positive movie review?
 Review: everything in the phantom you have seen many times before andthere is nothing new presented here. wincer displays absolutely no skill in setting up an exciting action sequence .billy zane is wooden as the hero .kristy swanson is given very little to do , and does very little with it . treat williams , looking like rhett butler but sounding like mickey mouse , is one of the worst villains i have ever seen in a movie .only catherine zeta jones , as one of williams cohorts turns in a good performance .she has energy and spunk , which the movie needed much more of .oh yeah , the phantom also has a secret identity butthis is so poorly played out you wo n't even care .about the only things i can recommend are a good performance by jones , and some colorful scenery .however , if you re looking for a fun family movie , go watch the underrated flipper .this is not a good movie .
 Important Phrases:

@@ -82,7 +82,7 @@ def create_prompts():
                           'r') as file:
                     reviewText = file.read().replace('\n', '')
 
-                line1 = "Question: Answer the following yes/no question."
+                line1 = "Question: Answer the following yes/no question and give the important phrases."
                 line2 = "Is this a positive movie review?"
 
                 # if countReviewLen + len(reviewText) > 350:
