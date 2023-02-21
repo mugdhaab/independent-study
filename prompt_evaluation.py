@@ -26,7 +26,7 @@ def run_model(prompts):
 
 
 def output_formatting(output_answers):
-    output_answers_trunc = [ans[3:6].strip().lower() for ans in output_answers]
+    output_answers_trunc = [ans.strip().lower() for ans in output_answers]
     jsonString = json.dumps(output_answers_trunc)
     with open("/uufs/chpc.utah.edu/common/home/u1409693/independent-study/output_answers_important.json", "w") as outfile:
         outfile.write(jsonString)

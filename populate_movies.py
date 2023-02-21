@@ -2,9 +2,6 @@ from os import listdir
 import csv
 import jsonlines
 import json
-import faulthandler
-
-faulthandler.enable()
 
 
 def populate_movies():
