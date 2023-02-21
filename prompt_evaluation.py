@@ -18,7 +18,7 @@ def read_input():
 
 def run_model(prompts):
     tokenizer = AutoTokenizer.from_pretrained("google/flan-t5-large")
-    inputs = tokenizer(prompts, return_tensors="pt", padding=True, truncation=True)
+    inputs = tokenizer(prompts[:5], return_tensors="pt", padding=True, truncation=True)
     model = AutoModelForSeq2SeqLM.from_pretrained("google/flan-t5-large")
     outputs = model.generate(**inputs)
     answers = tokenizer.batch_decode(outputs, skip_special_tokens=True, max_length=5000)
