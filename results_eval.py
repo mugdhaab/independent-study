@@ -13,11 +13,16 @@ def evaluate():
 
     with open(expected_answers_path) as file:
         data_expected = json.load(file)
-
     with open(generated_answers_path) as file:
         data_generated = json.load(file)
 
-    y_test = [0 if data_expected[key] == "no" else 1 for key in data_expected]
+    y_test = []
+    for key in data_expected:
+        if len(key) <= 10 and data_expected[key] == "no":
+            y_test.append(0)
+        elif len(key) <= 10 and data_expected[key] == "yes":
+            y_test.append(1)
+
     pred = [0 if val == "no" else 1 for val in data_generated]
 
     precision = precision_score(y_test, pred)
