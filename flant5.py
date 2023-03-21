@@ -14,10 +14,10 @@ def read_input(directory_path, directory_files):
     return prompts
 
 
-def run_model(prompts, shot):
-    tokenizer = AutoTokenizer.from_pretrained("google/" + shot)
+def run_model(prompts, model_name):
+    tokenizer = AutoTokenizer.from_pretrained("google/" + model_name)
     inputs = tokenizer(prompts, return_tensors="pt", padding=True, truncation=True)
-    model = AutoModelForSeq2SeqLM.from_pretrained("google/" + shot)
+    model = AutoModelForSeq2SeqLM.from_pretrained("google/" + model_name)
     outputs = model.generate(**inputs)
     answers = tokenizer.batch_decode(outputs, skip_special_tokens=True, max_length=5000)
     return answers
@@ -46,5 +46,5 @@ if __name__ == '__main__':
     output_path = "/uufs/chpc.utah.edu/common/home/u1409693/output_" + args.task + "_" + str(args.shot) + "_shot.json"
 
     input_prompts = read_input(directory_path, directory_files)
-    generated_answers = run_model(input_prompts, args.shot)
+    generated_answers = run_model(input_prompts, args.model)
     output_formatting(generated_answers, output_path)
