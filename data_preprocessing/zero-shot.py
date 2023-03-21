@@ -5,7 +5,7 @@ import json
 
 
 def zero_shot_prompts():
-    valPath = "/Users/mugdha/Documents/Independent Study/movies/independent-study/data_preprocessing/val.jsonl"
+    valPath = "/Users/mugdha/Documents/IndependentStudy/movies/independent-study/data_preprocessing/val.jsonl"
     valReviews = []
     with jsonlines.open(valPath) as reader:
         for obj in reader:
@@ -17,7 +17,7 @@ def zero_shot_prompts():
         line2 = "Is this a positive movie review?"
         lines.append(line1)
         lines.append(line2)
-        with open("/Users/mugdha/Documents/Independent Study/movies/independent-study/docs/" + valReviews[valCount][
+        with open("/Users/mugdha/Documents/IndependentStudy/movies/independent-study/docs/" + valReviews[valCount][
             'annotation_id'], 'r') as file:
             valReviewText = file.read().replace('\n', '')
         lines.append("Review: " + valReviewText)
@@ -32,7 +32,7 @@ def zero_shot_prompts():
         # valDict["prompt_" + str(valCount) + "_imp_phrases"] = importances
 
 
-        promptPath = "/Users/mugdha/Documents/Independent Study/movies/independent-study/prompts_zero_shot/prompt_" + str(
+        promptPath = "/Users/mugdha/Documents/IndependentStudy/movies/independent-study/prompts_zero_shot/prompt_" + str(
             valCount) + ".txt"
         with open(promptPath, mode='wt', encoding='utf-8') as myFile:
             myFile.write('\n'.join(lines))

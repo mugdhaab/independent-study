@@ -6,7 +6,7 @@ import random
 
 
 def populate_movies():
-    mypath = "/Users/mugdha/Documents/Independent Study/movies/independent-study/docs"
+    mypath = "/Users/mugdha/Documents/IndependentStudy/movies/independent-study/docs"
     allFiles = [f for f in sorted(listdir(mypath))]
     negReviews = allFiles[:200]
     posReviews = allFiles[1000:1200]
@@ -27,14 +27,14 @@ def create_prompts():
     # pick the review text corresponding to each neg and pos and create a map
     # iterate over every row from csv and create the prompt
     # store every prompt in a new file
-    trainPath = "/Users/mugdha/Documents/Independent Study/movies/independent-study/data_preprocessing/train.jsonl"
+    trainPath = "/Users/mugdha/Documents/IndependentStudy/movies/independent-study/data_preprocessing/train.jsonl"
     # negR_004.txt : [
     trainReviewsDict = {}
     with jsonlines.open(trainPath) as reader:
         for obj in reader:
             trainReviewsDict[obj["annotation_id"]] = obj["evidences"]
 
-    valPath = "/Users/mugdha/Documents/Independent Study/movies/independent-study/data_preprocessing/val.jsonl"
+    valPath = "/Users/mugdha/Documents/IndependentStudy/movies/independent-study/data_preprocessing/val.jsonl"
     valReviews = []
     with jsonlines.open(valPath) as reader:
         for obj in reader:
@@ -44,7 +44,7 @@ def create_prompts():
 
     valDict = {}
 
-    trainMoviesPath = "/Users/mugdha/Documents/Independent Study/movies/independent-study/data_preprocessing/train_movies.csv"
+    trainMoviesPath = "/Users/mugdha/Documents/IndependentStudy/movies/independent-study/data_preprocessing/train_movies.csv"
     fileCount = 0
 
     with open(trainMoviesPath, 'r') as read_obj:
@@ -56,7 +56,7 @@ def create_prompts():
             for i in range(2):
                 # import the whole file text
                 # reviewText = []
-                with open("/Users/mugdha/Documents/Independent Study/movies/independent-study/docs/" + review[i],
+                with open("/Users/mugdha/Documents/IndependentStudy/movies/independent-study/docs/" + review[i],
                           'r') as file:
                     reviewText = file.read().replace('\n', '')
 
@@ -96,7 +96,7 @@ def create_prompts():
             '''
             Adding validation prompt
             '''
-            with open("/Users/mugdha/Documents/Independent Study/movies/independent-study/docs/" + valReviews[fileCount]['annotation_id'], 'r') as file:
+            with open("/Users/mugdha/Documents/IndependentStudy/movies/independent-study/docs/" + valReviews[fileCount]['annotation_id'], 'r') as file:
                 valReviewText = file.read().replace('\n', '')
             lines.append("Review: " + valReviewText)
             # lines.append("Answer:")
@@ -119,9 +119,9 @@ def create_prompts():
                 json.dump(valDict, outfile)
 
             '''
-            Creating prmopt file
+            Creating prompt file
             '''
-            promptPath = "/Users/mugdha/Documents/Independent Study/movies/independent-study/prompts_important/prompt_" + str(fileCount) + ".txt"
+            promptPath = "/Users/mugdha/Documents/IndependentStudy/movies/independent-study/prompts_important/prompt_" + str(fileCount) + ".txt"
             with open(promptPath, mode='wt', encoding='utf-8') as myFile:
                 myFile.write('\n'.join(lines))
 

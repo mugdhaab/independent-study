@@ -8,8 +8,8 @@ from sklearn.metrics import f1_score
 def evaluate():
     expected_answers_path = "/uufs/chpc.utah.edu/common/home/u1409693/independent-study/validationPrompts.json"
     generated_answers_path = "/uufs/chpc.utah.edu/common/home/u1409693/output_answers.json"
-    # expected_answers_path = "/Users/mugdha/Documents/Independent Study/movies/independent-study/validationPrompts.json"
-    # generated_answers_path = "/Users/mugdha/Documents/Independent Study/movies/independent-study/output_answers.json"
+    # expected_answers_path = "/Users/mugdha/Documents/IndependentStudy/movies/independent-study/validationPrompts.json"
+    # generated_answers_path = "/Users/mugdha/Documents/IndependentStudy/movies/independent-study/output_answers.json"
 
     with open(expected_answers_path) as file:
         data_expected = json.load(file)
