@@ -3,6 +3,7 @@ import os
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 import json
 
+from transformers import T5Tokenizer, T5ForConditionalGeneration
 
 def read_input(directory_path, directory_files):
     prompts = []
@@ -15,12 +16,15 @@ def read_input(directory_path, directory_files):
 
 
 def run_model(prompts, model_name):
-    tokenizer = AutoTokenizer.from_pretrained("google/" + model_name)
-    inputs = tokenizer(prompts, return_tensors="pt", padding=True, truncation=True)
-    model = AutoModelForSeq2SeqLM.from_pretrained("google/" + model_name)
+    tokenizer = T5Tokenizer.from_pretrained("google/" + model_name)
+    model = T5ForConditionalGeneration.from_pretrained("google/" + model_name)
+
+    # input_text = "translate English to German: How old are you?"
+    # truncation=True, max_length=512
+    inputs = tokenizer(prompts, return_tensors="pt", padding=True)
     outputs = model.generate(**inputs)
-    answers = tokenizer.batch_decode(outputs, skip_special_tokens=True, max_length=5000)
-    return answers
+    return tokenizer.batch_decode(outputs, skip_special_tokens=True, max_length=5000)
+
 
 
 def output_formatting(output_answers, output_path):
