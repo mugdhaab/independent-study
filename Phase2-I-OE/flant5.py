@@ -45,10 +45,10 @@ if __name__ == '__main__':
     )
     args = parser.parse_args()
 
-    directory_path = "/uufs/chpc.utah.edu/common/home/u1409693/independent-study/" + "prompts_" + args.task + "_" + str(args.shot) + "_shot/"
+    directory_path = "/uufs/chpc.utah.edu/common/home/u1409693/independent-study/" + "prompts_" + args.task + "_" + str(args.shot) + "_shot_option/"
     directory_files = sorted(os.listdir(directory_path))
     print(directory_files)
-    output_path = "/uufs/chpc.utah.edu/common/home/u1409693/output_" + args.task + "_" + str(args.shot) + "_shot_" +args.model  + ".json"
+    output_path = "/uufs/chpc.utah.edu/common/home/u1409693/output_" + args.task + "_" + str(args.shot) + "_shot_option_" +args.model  + ".json"
 
     input_prompts = read_input(directory_path, directory_files)
     generated_answers = run_model(input_prompts, args.model)
