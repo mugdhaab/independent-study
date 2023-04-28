@@ -33,7 +33,8 @@ def get_movies_examples(dataset_path, train_path, val_path, shot, task):
         for obj in reader:
             valReviews.append(obj)
 
-    line2 = "What is the sentiment expressed in this text? Which phrases were important in identifying this?"
+    line1 = "Answer the following question by providing evidence. Evidence are 1-5 phrases in the text that support the answer."
+    line2 = "Question: What is the sentiment expressed in this text? Give the evidence before answering."
     fileCount = 0
     valDict = {}
     train_prompts = [review1, review2]
@@ -43,7 +44,7 @@ def get_movies_examples(dataset_path, train_path, val_path, shot, task):
         listMovies.append(train_prompts)
     try:
         for review in listMovies:
-            lines = []
+            lines = [line1]
             for i in range(len(review)):
                 with open(dataset_path + "/" + review[i], 'r') as file:
                     reviewText = file.read().replace('\n', '')
@@ -52,9 +53,13 @@ def get_movies_examples(dataset_path, train_path, val_path, shot, task):
                 reviewLines = ""
                 impRevLinesTxt = ""
                 phrases = []
+                phrasesStrBuilder = ""
+                phraseCount = 1
                 for reviewLine in reviewTextList:
                     for importantPhrase in trainReviewsDict[review[i]]:
                         if importantPhrase[0]['text'] in reviewLine:
+                            phrasesStrBuilder += "Phrase " + str(phraseCount) + ": " + importantPhrase[0]['text'] + ", "
+                            phraseCount += 1
                             phrases.append(importantPhrase[0]['text'])
 
                     reviewLines += reviewLine + '. '
@@ -70,12 +75,13 @@ def get_movies_examples(dataset_path, train_path, val_path, shot, task):
                     line3 = "negative"
                 else:
                     line3 = "positive"
-                phrasesStr = ', '.join(phrases)
+                # phrasesStr = ', '.join(phrases)
 
-                lines.append("text: " + impRevLinesTxt[:800])
+                lines.append("Text: " + impRevLinesTxt[:800])
                 lines.append(line2)
-                lines.append(line3)
-                lines.append("phrases: " + phrasesStr)
+
+                lines.append("Evidence: " + phrasesStrBuilder)
+                lines.append("Answer: " + line3)
                 lines.append("###")
 
             '''
@@ -93,7 +99,7 @@ def get_movies_examples(dataset_path, train_path, val_path, shot, task):
                 for an in ans:
                     valReviewLines.append(an)
             valReviewText = "".join(valReviewLines)
-            lines.append("text: " + valReviewText[:800])
+            lines.append("Text: " + valReviewText[:800])
 
             lines.append(line2)
 
@@ -112,7 +118,7 @@ def get_movies_examples(dataset_path, train_path, val_path, shot, task):
             '''
             Creating prompt file
             '''
-            output_directory = "prompts_" + task + "_" + str(shot) + "_shot"
+            output_directory = "prompts_" + task + "_" + str(shot) + "_shot_option"
             promptPath = "/Users/mugdha/Documents/IndependentStudy/movies/independent-study/" + output_directory + "/prompt_" + str(
                 fileCount) + ".txt"
             os.makedirs(os.path.dirname(promptPath), exist_ok=True)
